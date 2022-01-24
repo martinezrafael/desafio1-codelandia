@@ -1,0 +1,145 @@
+/* reset css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    /* colors */
+    --color-one: #574AE8;
+    --color-two: #475461;
+    --color-three: #B6B6B6;
+    --color-four: #F3F5F7;
+    --color-five: #FFFFFF;
+    --color-gradient: linear-gradient(to right, #574AE8, #3EA1DB);
+}
+
+body {
+    background-color: #EEE;
+}
+
+/* fonts */
+
+.fonteLexend {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.fonteInter {
+    font-family: 'Inter', sans-serif;
+}
+
+.primariaBranca {
+    color: #F9F9F9;
+}
+
+.secundariaBranca {
+    color: #A4A4A4;
+}
+
+.primariaPreta {
+    color: #212429;
+}
+
+.secundariaPreta {
+    color: #A4A4A4;
+}
+
+
+/* header */
+
+.header {
+    background: var(--color-gradient);
+    height: 250px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerContainer {
+    width: 62%;
+    margin: auto;
+    position: absolute;
+}
+
+/* navegação */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 73px;
+}
+
+.navbar-link {
+    color: #FFFFFF;
+    font-size: 24px;
+    text-decoration: none;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-link:hover {
+    transform: scale(1.2);
+}
+
+.inputSearch {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    border: none;
+    color: #414141;
+    font-size: 18px;
+    height: 65px;
+    padding: 8px;
+    width: 100%;
+}
+
+/* alterando as propriedades do placeholder */
+
+::placeholder {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* artigos */
+
+
+.articles {
+    width: 62%;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.articleHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    color: #B6B6B6;
+}
+
+.articleTitle {
+    font-size: 26px;
+    margin-bottom: 0.5em;
+    color: #313131;
+}
+
+.articleParagraph {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #B6B6B6;
+}
+
+@media screen and (max-width:500px) {
+
+    .headerContainer,
+    .articles {
+        width: 90%;
+    }
+
+}
